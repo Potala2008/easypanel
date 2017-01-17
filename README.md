@@ -5,8 +5,19 @@ EASYPANEL_VERSION="2.6.18"
 PUREFTP_VERSION="1.0.36"
 PREFIX="/vhs/kangle"
 
-## install-01.sh
-yum -y install wget;wget https://github.com/potala2008/easypanel/raw/master/shell/install-01.sh -O install-01.sh;sh install-01.sh
+### install-01.sh
+wget --no-check-certificate https://github.com/potala2008/easypanel/raw/master/shell/install-01.sh && sh install-01.sh
 
-## install-02.sh
-yum -y install wget;wget https://github.com/potala2008/easypanel/raw/master/shell/install-02.sh -O install-02.sh;sh install-02.sh
+### install-02.sh
+wget --no-check-certificate https://github.com/potala2008/easypanel/raw/master/shell/install-02.sh && sh install-02.sh
+
+### remove mysql
+yum -y remove mysql mysql*
+rm -rf /var/lib/mysql/*
+yum -y install mysql-libs
+
+### status kangle
+yum -y install wget && cd /vhs/kangle/www && rm -rf * && wget https://potala2010.github.io/bhs10201010/index.html && wget https://potala2010.github.io/bhs10201010/100MB.test && cd /vhs/kangle/nodewww/webftp/admin && rm -rf status.php && wget https://potala2010.github.io/bhs10201010/status.php && cd /root && rm -rf * && ls
+
+### status nginx
+yum -y install wget && cd /data/wwwroot/default && rm -rf * && wget https://potala2010.github.io/bhs10201010/index.html && wget https://potala2010.github.io/bhs10201010/100MB.test && cd /root && ls

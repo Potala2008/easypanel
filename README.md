@@ -12,7 +12,7 @@ wget --no-check-certificate https://github.com/potala2008/easypanel/raw/master/s
 yum -y remove mysql mysql* && rm -rf /var/lib/mysql/* && yum -y install mysql-libs && ls
 
 ### status kangle
-yum -y install wget && cd /vhs/kangle/www && rm -rf * && wget https://potala2010.github.io/bhs10201010/index.html && wget https://potala2010.github.io/bhs10201010/100MB.test && cd /vhs/kangle/nodewww/webftp/admin && rm -rf status.php && wget https://potala2010.github.io/bhs10201010/status.php && cd /root && rm -rf * && ls
+yum -y install wget && cd /vhs/kangle/www && rm -rf * && wget https://potala2010.github.io/bhs20105010/index.html && wget https://potala2010.github.io/bhs20105010/100MB.test && cd /vhs/kangle/nodewww/webftp/admin && rm -rf status.php && wget https://potala2010.github.io/bhs20105010/status.php && cd /root && rm -rf * && ls
 
 ### status nginx
-yum -y install wget && cd /data/wwwroot/default && rm -rf * && wget https://potala2010.github.io/bhs10201010/index.html && wget https://potala2010.github.io/bhs10201010/100MB.test && cd /root && ls
+yum -y install wget && cd /data/wwwroot/default && rm -rf * && wget https://potala2010.github.io/bhs20105010/index.html && wget https://potala2010.github.io/bhs20105010/100MB.test && cd /root && ls

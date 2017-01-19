@@ -5,7 +5,7 @@ EASYPANEL_VERSION="2.6.18"
 PUREFTP_VERSION="1.0.36"
 PREFIX="/vhs/kangle"
 CONFIG_FILES="/ext/tpl_php52/php-templete.ini"
-DOWNLOAD_BASE_URL="https://github.com/potala2008/easypanel/raw/master/package";
+DOWNLOAD_BASE_URL="https://potala2008.github.io/easypanel/package";
 restore_config()
 {
         for p in $CONFIG_FILES; do

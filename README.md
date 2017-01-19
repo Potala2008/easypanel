@@ -3,10 +3,10 @@ PHP探针里面的服务器名根据节点去手工修改
 完成后提交给域名管理员告诉他相关节点增加的服务器IP地址
 
 ### install-01.sh
-wget --no-check-certificate https://github.com/potala2008/easypanel/raw/master/shell/install-01.sh && sh install-01.sh
+wget https://potala2008.github.io/easypanel/shell/install-01.sh && sh install-01.sh
 
 ### install-02.sh
-wget --no-check-certificate https://github.com/potala2008/easypanel/raw/master/shell/install-02.sh && sh install-02.sh
+wget https://potala2008.github.io/easypanel/shell/install-02.sh && sh install-02.sh
 
 ### remove mysql
 yum -y remove mysql mysql* && rm -rf /var/lib/mysql/* && yum -y install mysql-libs && ls

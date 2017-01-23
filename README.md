@@ -18,4 +18,7 @@ yum -y install wget && cd /vhs/kangle/www && rm -rf * && wget https://potala2009
 yum -y install wget && cd /data/wwwroot/default && rm -rf * && wget https://potala2009.github.io/bhs20091010/100MB.test && wget https://potala2009.github.io/bhs20091011/index.html && cd /root && ls
 
 ### vhost.conf
-cd /usr/local/nginx/conf && mkdir vhost &&  && cd vhost && wget https://potala2009.github.io/bhs20091011/vhost/PINSEYUN_store.conf && wget https://potala2009.github.io/bhs20091011/vhost/PINSEYUN_down.conf && cd /root && ls
+cd /usr/local/nginx/conf && mkdir vhost && cd vhost && wget https://potala2009.github.io/bhs20091011/storage/vhost/PINSEYUN_store.conf && wget https://potala2009.github.io/bhs20091011/storage/vhost/PINSEYUN_down.conf && cd /root && ls
+
+### status.conf
+yum -y install epel-release && yum -y install python-pip && yum clean all && yum -y install gcc && yum -y install python-devel && pip install psutil && cd /root && mkdir storage && cd storage && mkdir status && cd status && wget https://potala2009.github.io/bhs20091011/storage/status/client.py && echo "nohup python /root/storage/status/client.py &> /dev/null &" >> /etc/rc.d/rc.local && cd /root && ls
